@@ -1,0 +1,37 @@
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/fetchFragment">
+
+    <fragment
+        android:id="@+id/fetchFragment"
+        android:name="iss.nus.edu.sg.fragments.workshop.pokemonmemorygame.FetchFragment"
+        tools:layout="@layout/fragment_fetch">
+        <action
+            android:id="@+id/action_fetchFragment_to_playFragment"
+            app:destination="@id/playFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/playFragment"
+        android:name="iss.nus.edu.sg.fragments.workshop.pokemonmemorygame.PlayFragment"
+        tools:layout="@layout/fragment_play">
+        <argument
+            android:name="selected"
+            app:argType="integer[]"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/leaderboardFragment"
+        android:name="iss.nus.edu.sg.fragments.workshop.pokemonmemorygame.LeaderboardFragment"
+        tools:layout="@layout/fragment_leaderboard">
+        <action
+            android:id="@+id/action_leaderboard_to_fetch"
+            app:destination="@id/fetchFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"/>
+    </fragment>
+
+</navigation>

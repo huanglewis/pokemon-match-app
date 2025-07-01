@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/bg_fragment"
+    android:padding="24dp"
+    android:gravity="center_horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose 6 Pokémon"
+        android:layout_marginBottom="16dp"
+        android:textSize="20sp"
+        android:fontFamily="@font/pixel_font"
+        android:textColor="@color/gba_white"
+        android:layout_gravity="center" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/pokemonGrid"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="8dp" />
+
+    <TextView
+        android:id="@+id/selectionCounter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/pixel_font"
+        android:textColor="@color/gba_white"
+        android:text="Selected: 0 / 6"
+        android:layout_marginTop="8dp" />
+
+    <Button
+        android:id="@+id/startGameButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:text="START GAME"
+        android:fontFamily="@font/pixel_font"
+        android:textColor="@color/gba_white"
+        android:background="@drawable/btn_login"
+        android:layout_marginTop="16dp"/>
+</LinearLayout>

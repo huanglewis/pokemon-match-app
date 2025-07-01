@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/bg_fragment"
+    android:padding="24dp"
+    android:gravity="center_horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="Top 5 Best Times"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:fontFamily="@font/pixel_font"
+        android:textColor="@color/gba_white"
+        android:layout_marginBottom="12dp" />
+
+    <TextView
+        android:id="@+id/notTop5Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You didn’t make the top 5 this round!"
+        android:visibility="gone"
+        android:textColor="@color/poke_yellow"
+        android:textSize="16sp"
+        android:fontFamily="@font/pixel_font"
+        android:layout_marginBottom="12dp" />
+
+    <ListView
+        android:id="@+id/leaderboardList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:dividerHeight="8dp"
+        android:padding="8dp" />
+
+    <Button
+        android:id="@+id/playAgainButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PLAY AGAIN"
+        android:fontFamily="@font/pixel_font"
+        android:textColor="@color/gba_white"
+        android:background="@drawable/btn_login"
+        android:layout_marginTop="16dp" />
+</LinearLayout>

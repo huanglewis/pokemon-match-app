@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="gba_white">#F8F8F8</color>
+    <color name="gba_black">#212121</color>
+    <color name="gba_green_bg">#7AC74C</color> <!-- sample green background -->
+    <color name="gba_red">#E3350D</color>
+
+    <!-- Pokémon FireRed / LeafGreen Inspired Colors -->
+    <color name="poke_red">#D62828</color>         <!-- FireRed border/button -->
+    <color name="poke_black">#2B2D42</color>      <!-- Text or shadow -->
+    <color name="poke_yellow">#FFD166</color>     <!-- Highlights -->
+    <color name="poke_white">#FAFAFA</color>      <!-- Text or borders -->
+    <color name="poke_gray">#606060</color>       <!-- Background -->
+    <color name="gba_green">#78C850</color>         <!-- GBA green (grass tone) -->
+    <color name="gba_dark_green">#4E8234</color>    <!-- GBA dark green (leaf tone) -->
+
+</resources>
